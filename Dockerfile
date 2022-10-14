@@ -5,7 +5,7 @@ RUN sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|
 RUN  yum install httpd -y
 RUN yum install zip -y
 RUN yum install unzip -y
-ADD https:https://www.free-css.com/assets/files/free-css-templates/download/page284/maker.zip /var/www/html/
+ADD https://www.free-css.com/assets/files/free-css-templates/download/page284/maker.zip /var/www/html/
 WORKDIR /var/ww/html
 RUN unzip maker.zip
 RUN cp -rvf maker/*
